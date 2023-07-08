@@ -1,8 +1,8 @@
 {
-  "homepage": "https://github.com/Arsh234-GIT/Airbnb.git",
+  "homepage": "https://Arsh234-GIT.github.io/Airbnb",
   "name": "Airbnb",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -31,3 +31,4 @@
     "gh-pages": "^5.0.0"
   }
 }
+
