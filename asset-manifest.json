@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Arsh234-GIT/Airbnb.git/static/css/main.94f58513.css",
-    "main.js": "/Arsh234-GIT/Airbnb.git/static/js/main.ac11591d.js",
-    "static/js/787.3ed8da05.chunk.js": "/Arsh234-GIT/Airbnb.git/static/js/787.3ed8da05.chunk.js",
-    "index.html": "/Arsh234-GIT/Airbnb.git/index.html",
-    "main.94f58513.css.map": "/Arsh234-GIT/Airbnb.git/static/css/main.94f58513.css.map",
-    "main.ac11591d.js.map": "/Arsh234-GIT/Airbnb.git/static/js/main.ac11591d.js.map",
-    "787.3ed8da05.chunk.js.map": "/Arsh234-GIT/Airbnb.git/static/js/787.3ed8da05.chunk.js.map"
+    "main.css": "/Airbnb/static/css/main.94f58513.css",
+    "main.js": "/Airbnb/static/js/main.c2315162.js",
+    "static/js/787.3ed8da05.chunk.js": "/Airbnb/static/js/787.3ed8da05.chunk.js",
+    "index.html": "/Airbnb/index.html",
+    "main.94f58513.css.map": "/Airbnb/static/css/main.94f58513.css.map",
+    "main.c2315162.js.map": "/Airbnb/static/js/main.c2315162.js.map",
+    "787.3ed8da05.chunk.js.map": "/Airbnb/static/js/787.3ed8da05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94f58513.css",
-    "static/js/main.ac11591d.js"
+    "static/js/main.c2315162.js"
   ]
 }
