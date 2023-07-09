@@ -7,8 +7,8 @@ class Write extends Component {
             <div className="head-container" >
 
 
-                <h1 className="hero-head">Online Experiences</h1>
-                <p className="hero-para">Join Unique interacative activities by one-of-a-kind hosts-all without leaving home</p>
+            <h1 className="hero-head">Online Experiences</h1>
+            <p className="hero-para">Join Unique interacative activities by one-of-a-kind hosts-all without leaving home</p>
 
 
             </div>
