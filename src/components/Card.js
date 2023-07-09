@@ -13,7 +13,7 @@ const Card = (props) => {
       {badgeText && <div className='card--badge'>{badgeText}</div>}
       <img src={`../Images/${props.img}`} className="card--image" alt="" />
       <div className="card--stats">
-        <img src="../Images/STAR.png" className="card--star" alt="" />
+        <img src="../Airbnb/Images/Star.png" className="card--star" alt="" />
         <p>{props.rating}</p>
         <p className="gray">({props.reviewCount})•</p>
         <p className="gray">{props.location}</p>

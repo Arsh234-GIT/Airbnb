@@ -5,7 +5,7 @@ class Hero extends Component{
     render(){
         return(
             <section className="hero" >
-                <img src="../Images/GROUP.png" className="hero-image" />
+                <img src="../Images/Group.png" className="hero-image" />
             
                 
             
