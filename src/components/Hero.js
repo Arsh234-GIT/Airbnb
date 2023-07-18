@@ -5,7 +5,7 @@ class Hero extends Component{
     render(){
         return(
             <section className="hero" >
-                <img src="../Airbnb/Images/Group.png" className="hero-image" />
+                <img src="../Airbnb/Images/Group.png" alt="a group of images" className="hero-image"  />
             
                 
             

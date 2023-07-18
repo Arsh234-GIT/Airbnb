@@ -7,8 +7,8 @@ class Navbar extends Component {
         return (
 
             <nav className="nav-container">
-                <img className="nav-logo" src="../Airbnb/Images/Vector.png"  />
-                <h1></h1>
+                <img className="nav-logo" src="../Airbnb/Images/Vector.png" alt="airbnb logo" />
+                
 
             </nav>
 
