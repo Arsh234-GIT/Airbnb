@@ -41,108 +41,101 @@ body{
   
 }
 /*navbar*/
-.react-container{
+/* Common styles for all screen sizes */
+.react-container {
   max-width: 550px;
-  
-
   margin: 5px auto;
-  margin-left: 380px;
-  box-sizing: 2px 2px 10px 1px rgba(58,58,58,0.452);
-
+  box-sizing: border-box; /* Fix the box-sizing value */
 }
-.nav-container{
+
+.nav-container {
   height: 40px;
   display: flex;
-  
   align-items: center;
-  padding: 20px 36px;
+  padding: 20px;
   background: #FFFFFF;
-box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.nav-logo{
-  height:33px ;
+.nav-logo {
+  height: 33px;
   margin-left: 33px;
 }
-  
-/*hero*/
-.hero{
-  
+
+/* hero */
+.hero {
   padding: 25px;
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
-
 }
-.hero-image{
+
+.hero-image {
   height: 230px;
- margin: auto;
-  
+  margin: auto;
   align-self: center;
-
 }
 
-/*write*/
-
-.head-container{
-  
+/* write */
+.head-container {
   padding: 3px 35px;
-  
 }
 
-.hero-head{
+.hero-head {
   font-size: 37px;
+}
 
-  }
-  .hero-para{
-    max-width: 420px;
-    margin: px 0px 20px 7px;
-  
-  }
-  .cards-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    overflow-x: auto;
-    padding-left: 24px;
+.hero-para {
+  max-width: 420px;
+  margin: 0px 0px 20px 7px; /* Remove 'px' from 'px 0px 20px 7px' */
+}
 
-  }
-  .card{
-    width: 175px;
-    font-size: 12px;
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-left: 24px;
+}
 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-    
-  }
-  .card--image{
-    height: 237px;
-    width: 176px;
-    border-radius: 9px;
-    margin-bottom: 9px;
+.card {
+  width: 175px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  }
-  .gray{
-    color:#918E9B ;
-  }
-  
-  .card--stats{
-    align-items: center;
-     display: flex; 
-  }
-  .card--star{
-    height: 14px;
-  }
-  .bold{
-    font-weight: bold;
-  }
-  .card--price{
-    margin-top: auto;
-  }
-.card--badge{
+.card--image {
+  height: 237px;
+  width: 176px;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.card--stats {
+  align-items: center;
+  display: flex;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -150,8 +143,43 @@ box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   padding: 4px 5px;
   border-radius: 2px;
   font-weight: bold;
-
 }
-  
 
-/* Add any additional media queries and styles as per your design requirements */
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .react-container {
+    max-width: 100%; /* Adjust the max-width for smaller screens */
+    margin-left: 10px; /* Change the left margin for better alignment */
+  }
+
+  .nav-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .nav-logo {
+    margin-left: 10px; /* Change the margin for better alignment */
+  }
+
+  .hero-head {
+    font-size: 28px; /* Reduce the font size for smaller screens */
+  }
+
+  .hero-para {
+    max-width: 100%; /* Adjust the max-width for smaller screens */
+    margin: 0px 0px 10px 0px; /* Modify the margin for better spacing */
+  }
+
+  .cards-list {
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center the cards */
+    padding-left: 10px; /* Modify the left padding for better spacing */
+  }
+
+  .card {
+    width: 150px; /* Adjust the card width for smaller screens */
+  }
+
+  .card--stats {
+    justify-content: center; /* Center the stats */
+  }
+}
