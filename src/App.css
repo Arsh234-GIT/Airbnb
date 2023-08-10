@@ -42,23 +42,35 @@ body{
 }
 /*navbar*/
 /* Common styles for all screen sizes */
-.react-container {
-  max-width: 550px;
-  margin: 5px auto;
-  box-sizing: border-box; /* Fix the box-sizing value */
-}
+
 
 .nav-container {
-  height: 40px;
+  height: 60px;
   display: flex;
+ justify-content: space-between;
   align-items: center;
   padding: 20px;
   background: #FFFFFF;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
-
+ .nav-list{
+  
+  list-style: none;
+    padding: 0;
+    margin-right: 20px;
+    display: flex;
+    gap: 30px; /* Adjust spacing between list items */
+   cursor: pointer;
+}
+.nav-list li {
+ 
+  font-weight: bold;
+  font-size: 16px; 
+  color: #333; 
+}
 .nav-logo {
-  height: 33px;
+
+  height: 43px;
   margin-left: 33px;
 }
 
@@ -71,45 +83,47 @@ body{
 }
 
 .hero-image {
-  height: 230px;
+ 
   margin: auto;
   align-self: center;
 }
 
 /* write */
 .head-container {
+  margin-top: 10px;
   padding: 3px 35px;
 }
 
 .hero-head {
-  font-size: 37px;
+  font-size: 50px;
 }
 
 .hero-para {
-  max-width: 420px;
+  max-width: 460px;
   margin: 0px 0px 20px 7px; /* Remove 'px' from 'px 0px 20px 7px' */
+  font-size: 20px;
 }
 
 .cards-list {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 80px;
   overflow-x: auto;
   padding-left: 24px;
 }
 
 .card {
-  width: 175px;
-  font-size: 12px;
+  width: 200px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .card--image {
-  height: 237px;
-  width: 176px;
+  height: 300px;
+  width: 200px;
   border-radius: 9px;
   margin-bottom: 9px;
 }
@@ -124,7 +138,7 @@ body{
 }
 
 .card--star {
-  height: 14px;
+  height: 16px;
 }
 
 .bold {
@@ -146,40 +160,67 @@ body{
 }
 
 /* Media queries for smaller screens */
-@media screen and (max-width: 768px) {
-  .react-container {
-    max-width: 100%; /* Adjust the max-width for smaller screens */
-    margin-left: 10px; /* Change the left margin for better alignment */
-  }
 
+/* Mobile Phones */
+@media (max-width: 767px) {
   .nav-container {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
   }
-
+  
+  .nav-list {
+    gap: 15px;
+    margin-right: 0;
+    cursor: pointer;
+  }
+  
+  .nav-list li {
+    font-size: 14px;
+  }
+  
   .nav-logo {
-    margin-left: 10px; /* Change the margin for better alignment */
+    
+    
+    
+    margin-left: 10px;
   }
-
+  
+  .hero {
+    padding: 15px;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
   .hero-head {
-    font-size: 28px; /* Reduce the font size for smaller screens */
+    font-size: 36px;
   }
-
+  
   .hero-para {
-    max-width: 100%; /* Adjust the max-width for smaller screens */
-    margin: 0px 0px 10px 0px; /* Modify the margin for better spacing */
+    font-size: 16px;
   }
-
+  
   .cards-list {
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    justify-content: center; /* Center the cards */
-    padding-left: 10px; /* Modify the left padding for better spacing */
+    gap: 20px;
+    padding-left: 10px;
+    overflow-x: scroll;
+    cursor: pointer;
   }
-
+  
   .card {
-    width: 150px; /* Adjust the card width for smaller screens */
+    width: 150px;
   }
+  
+  .card--image {
+    height: 200px;
+    width: 150px;
+  }
+}
 
-  .card--stats {
-    justify-content: center; /* Center the stats */
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-image {
+    max-width: 100%;
+    height: auto;
   }
 }
